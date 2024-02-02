@@ -3,8 +3,28 @@ CACHE MANIFEST
 
 CACHE:
 index.html
-estilo.css
 script.js
+style.css
+imagenes/auriculares.png
+imagenes/camara.png
+imagenes/car.svg
+imagenes/carga.png
+imagenes/cascos.png
+imagenes/demon.png
+imagenes/digitalps5.png
+imagenes/god.png
+imagenes/horizon.png
+imagenes/icono.png
+imagenes/logo.png
+imagenes/mando.png
+imagenes/menu.png
+imagenes/miles.png
+imagenes/ps5.png
+imagenes/ps52.png
+imagenes/ratchet.png
+imagenes/usb.png
+imagenes/v2.png
+imagenes/wallpaper.png
 
 NETWORK:
 *
