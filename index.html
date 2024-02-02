@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <img src="images/logo.png" alt="" class="logo">
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="images/menu.png" class="menu-icono" alt=""></label>
+            <nav class="navbar" id="inicio">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <hr class="hrmenu">
+                    <li><a href="#lista-1">Descuentos en Videojuegos</a></li>
+                    <hr class="hrmenu">
+                    <li><a href="#lista-2">Hardware</a></li>
+                    <hr class="hrmenu">
+                    <li><a href="#lista-3">Accesorios</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="header-info">
+                            <div class="header-txt">
+                                <h1>Consola PlayStation®5</h1>
+                                <div class="prices">
+                                    <p class="price-1">549.99 €</p>
+                                    <p class="price-2">449.99 €</p>
+                                </div>
+                                <a href="#" class="btn-1">Informacion</a>
+                            </div>
+                            <div class="header-img">
+                                <img src="images/ps5.png" alt="" id="ps5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="header-info">
+                            <div class="header-txt">
+                                <h1>Mando inalámbrico DualSense™</h1>
+                                <div class="prices">
+                                    <p class="price-1">69.99 €</p>
+                                    <p class="price-2">49.99 €</p>
+                                </div>
+                                <a href="#" class="btn-1">Informacion</a>
+                            </div>
+                            <div class="header-img">
+                                <img src="images/mando.png" alt="" id="mando">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="header-info">
+                            <div class="header-txt">
+                                <h1>Auriculares inalámbricos PULSE Elite™ para PS5</h1>
+                                <div class="prices">
+                                    <p class="price-1">149.99 €</p>
+                                    <p class="price-2">99.99 €</p>
+                                </div>
+                                <a href="#" class="btn-1">Informacion</a>
+                            </div>
+                            <div class="header-img">
+                                <img src="images/cascos.png" alt="" id="cascos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+    </header>
+
+    <hr id="hr1">
+
+    <section class="promos container" id="lista-1">
+        <h2>Descuentos en Videojuegos</h2>
+        <div class="categories">
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Marvel's Spider-Man: Miles Morales - PS5</h3>
+                    <div class="prices">    
+                        <p class="price-1">59.99 €</p>
+                        <p class="precio">29.99 €</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                </div>
+                <div class="categorie-img">
+                    <img src="images/miles.png" alt="">
+
+                </div>
+            </div>
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Demon's Souls - PS5</h3><br>
+                    <div class="prices">    
+                        <p class="price-1">79.99 €</p>
+                        <p class="precio">49.99 €</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                </div>
+                <div class="categorie-img">
+                    <img src="images/demon.png" alt="">
+
+                </div>
+            </div>
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Ratchet & Clank: Rift Apart - PS5</h3>
+                    <div class="prices">    
+                        <p class="price-1">79.99 €</p>
+                        <p class="precio">49.99 €</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                </div>
+                <div class="categorie-img">
+                    <img src="images/ratchet.png" alt="">
+
+                </div>
+            </div>
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>God of War™: Ragnarok – PS5</h3>
+                    <div class="prices">    
+                        <p class="price-1">79.99 €</p>
+                        <p class="precio">39.99 €</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                </div>
+                <div class="categorie-img">
+                    <img src="images/god.png" alt="">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <section class="products container" id="lista-2">
+        <h2>Hardware más Populares</h2>
+        <div class="swiper mySwiper-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/ps52.png" alt="">
+                        <div class="product-txt">
+                            <h3>Consola PlayStation®5 (grupo de modelos slim)*</h3>
+                            <p>Almacenamiento: <b>1 TB</b></p>
+                            <p class="precio">549.99 €</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/v2.png" alt="">
+                        <div class="product-txt">
+                            <h3>PlayStation®VR2</h3><br><br>
+                            <p>Almacenamiento: <b>N/A</b></p>
+                            <p class="precio">599.99 €</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/digitalps5.png" alt="">
+                        <div class="product-txt">
+                            <h3>Consola PlayStation®5 edición digital (grupo de modelos slim)*</h3>
+                            <p>Almacenamiento: <b>1 TB</b></p>
+                            <p class="precio">449.99 €</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/horizon.png" alt="">
+                        <div class="product-txt">
+                            <h3>Paquete PlayStation®VR2 Horizon Call of the Mountain™</h3>
+                            <p>Almacenamiento: <b>N/A</b></p>
+                            <p class="precio">649.99 €</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="products container" id="lista-3">
+        <h2>Accesorios</h2>
+        <div class="swiper mySwiper-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/auriculares.png" alt="">
+                        <div class="product-txt">
+                            <h3>Auriculares de botón inalámbricos PULSE Explore™ para PS5</h3>
+                            <p>Color: <b>Blanco</b></p>
+                            <p class="precio">219.99 €</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/carga.png" alt="">
+                        <div class="product-txt">
+                            <h3>Estación de recarga de DualSense™</h3><br>
+                            <p>Color: <b>Blanco</b></p>
+                            <p class="precio">29.99 €</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/camara.png" alt="">
+                        <div class="product-txt">
+                            <h3>Cámara HD para consolas PS5</h3><br>
+                            <p>Color: <b>Blanco</b></p>
+                            <p class="precio">59.99 €</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="11">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/usb.png" alt="">
+                        <div class="product-txt">
+                            <h3>Adaptador USB PlayStation Link™</h3><br>
+                            <p>Color: <b>Negro</b></p>
+                            <p class="precio">24.99 €</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="12">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <hr>
+
+    <footer class="footer container">
+        <div class="link">
+            <h3>Acerca de</h3>
+            <ul>
+                <li><a href="#">Sobre SIE</a></li>
+                <li><a href="#">Trabajos</a></li>
+                <li><a href="#">PlayStation Studios</a></li>
+                <li><a href="#">PlayStation Productions</a></li>
+                <li><a href="#">Empresa</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Productos</h3>
+            <ul>
+                <li><a href="#">PS5</a></li>
+                <li><a href="#">PS4</a></li>
+                <li><a href="#">PS VR2</a></li>
+                <li><a href="#">PS Plus</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Juegos</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Valores</h3>
+            <ul>
+                <li><a href="#">Medioambiente</a></li>
+                <li><a href="#">Accesibilidad</a></li>
+                <li><a href="#">Seguridad online</a></li>
+                <li><a href="#">Diversidad, equidad e inclusión</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Atención al cliente</h3>
+            <ul>
+                <li><a href="#">Centro de atención al cliente</a></li>
+                <li><a href="#">Seguridad en PlayStation</a></li>
+                <li><a href="#">Estado de PSN</a></li>
+                <li><a href="#">Reparaciones de PlayStation</a></li>
+                <li><a href="#">Restablecer contraseña</a></li>
+                <li><a href="#">Manuales</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="#">Términos de servicio de PSN</a></li>
+                <li><a href="#">Política de cancelación de PS Store</a></li>
+                <li><a href="#">Clasificaciones por edad</a></li>
+                <li><a href="#">Aviso de salud</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Desarrolladores</a></li>
+            </ul>
+        </div>
+    </footer>
+    <hr>
+    <p id="copyright">© 2024 Copyright / Jorge Fernández Cea</p>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
