@@ -139,6 +139,7 @@ body {
 
 #img-carrito {
     color: #FEFFFF;
+    cursor: pointer;
 }
 
 table {
