@@ -25,6 +25,8 @@ imagenes/ratchet.png
 imagenes/usb.png
 imagenes/v2.png
 imagenes/wallpaper.png
+https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css
+https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js
 
 NETWORK:
 *
