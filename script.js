@@ -117,6 +117,8 @@ function insertarCarrito(elemento) {
     `;
 
     lista.appendChild(row);
+
+    actualizarCantidadArticulos();
 }
 
 // Función para eliminar un elemento del carrito y del localStorage
@@ -128,6 +130,8 @@ function eliminarElemento(e) {
         row.remove();
         eliminarElementoLocalStorage(elementoId);
     }
+
+    actualizarCantidadArticulos();
 }
 
 // Función para vaciar el carrito y el localStorage
@@ -170,11 +174,22 @@ function eliminarElementoLocalStorage(id) {
 
 // Función para mostrar el contenido del localStorage (usada para propósitos de prueba)
 function mostrarContenido() {
-    const contenido = localStorage.getItem('elementos');
-    if (contenido) {
-        const contenidoFormateado = contenido.replace(/\n/g, '').replace(/\s{2,}/g, ' ');
-        alert(`Contenido almacenado:\n${contenidoFormateado}`);
+    const elementos = JSON.parse(localStorage.getItem('elementos'));
+
+    if (elementos && elementos.length > 0) {
+        let contenidoFormateado = '';
+        elementos.forEach(elemento => {
+            contenidoFormateado += `${elemento.titulo} - ${elemento.precio}\n`;
+        });
+        alert(`Contenido almacenado:\n\n${contenidoFormateado}`);
     } else {
         alert('LocalStorage está vacío.');
     }
+}
+
+// Función para actualizar la cantidad de artículos en el contador del carrito
+function actualizarCantidadArticulos() {
+    const contador = document.getElementById('contador-articulos');
+    const numeroFilas = lista.getElementsByTagName('tr').length;
+    contador.textContent = numeroFilas;
 }
